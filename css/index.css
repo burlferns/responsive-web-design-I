@@ -1,3 +1,279 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/*************************************** General stylings  *******/
+* {
+	padding:0;
+	margin:0;
+	/* border: 1px solid black; */
+}
+
+body {
+	font-family: 'Titillium Web', sans-serif;
+	width: 800px;
+    margin: 0 auto;
+    
+}
+
+
+/*************************************** Header stylings  *******/
+
+header nav a {
+	text-decoration: none;
+	margin:0 20px;
+	color:grey;
+}
+
+header nav {
+	display: flex;
+	align-items:center;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0 40px 0;
+}
+
+img {
+	width:183px;
+}
+
+/*************************************** cta cta-test & image stylings  *******/
+.cta-text h1 {
+	font-family: 'Bangers', cursive;
+	font-size: 40px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.cta-text button {
+	font-size:13px;
+	padding: 5px;
+	background-color:white;
+	border-color:black;
+	/* border:1px solid black; */
+}
+
+.cta img {
+	width:270px;
+}
+
+.cta {
+	display: flex;
+	justify-content:space-around;
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid black;
+	margin: 0 0 20px 0;
+}
+
+.cta-text {
+	display: flex;
+	flex-direction: column;
+	justify-content:space-evenly;
+}
+
+
+/*************************************** General top-content and bottom-content stylings  *******/
+.text-content h4 {
+	font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
+
+.text-content p {
+	font-size:12px;
+}
+
+
+
+/*************************************** top-content text-content stylings  *******/
+.top-content .text-content {
+	/* width: 350px; */
+	width: 44%;
+}
+
+.top-content {
+	display:flex;
+	justify-content: space-between;
+}
+
+.text-content h4, .text-content p {
+	margin: 20px 0 ;
+}
+
+/*************************************** image between top & bottom-content  stylings  *******/
+.middle-img {
+	width:100%;
+}
+
+
+/*************************************** bottom-content text-content stylings  *******/
+.bottom-content .text-content {
+	/* width: 210px; */
+	width: 26%;
+}
+
+
+.bottom-content {
+	display:flex;
+	justify-content: space-between;
+	padding:0 0 10px 0;
+	border-bottom: 1px solid black;
+	margin: 0 0 10px 0;
+}
+
+/*************************************** contact stylings  *******/
+.contact h4 {
+	font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
+
+.contact h4, .contact p {
+	margin: 15px 0;
+	margin-left:10px;
+}
+
+.contact p {
+	font-size:13px;
+}
+
+
+/*************************************** copyright  stylings  *******/
+footer {
+	font-size:13px;
+	text-align:center;
+	margin: 0 0 30px 0;
+}
+
+
+
+/*************************************** max media 800px  *******/
+@media only screen and (max-width: 800px) {
+    body {
+		/* background-color: lightblue; */
+		/* border: 1px solid black; */
+		width:100%;
+	}
+
+
+/************* header  *******/
+	header {
+		flex-direction:column-reverse;
+		align-items: center;
+	}
+
+	header nav {
+		width:100%;
+		justify-content:space-around;
+	}
+
+	header nav a {
+		margin: 20px 0;
+	}
+
+	header {
+		margin-bottom: 0px;
+	}
+
+/************* cta & cta-test  *******/
+	.cta img {
+		display:none;
+	}
+
+	.cta {
+		padding-bottom: 40px;
+	}
+
+	button {
+		margin-top:20px;
+	}
+
+	.top-content {
+		display:flex;
+		justify-content: space-between;
+	}
+
+/************* top content  *******/
+	.top-content {
+		justify-content: space-around;
+	}
+
+	.top-content .text-content {
+		width: 45%;
+	}
+
+/************* image in between top
+				and bottom  *******/
+	.middle-img {
+		width:96%;
+		margin-left:2%;
+		margin-right:2%;
+	}
+
+/************* bottom content  *******/
+	.bottom-content {
+		justify-content: space-around;
+	}
+
+} /**** end of max media 800px ***/
+
+
+
+
+
+
+
+
+/*************************************** max media 500px  *******/
+@media only screen and (max-width: 500px) {
+    body {
+		/* background-color: lightgreen; */
+		border: 1px solid black;
+	}
+
+/************* header  *******/
+	header nav {
+		flex-direction: column;
+		margin:20px 0;
+	}
+
+	header nav a {
+		width:100%;
+		border:1px solid grey;
+		text-align:center;
+		padding:10px 0;
+		margin:0;
+
+	}
+
+/************* top content  *******/
+.top-content {
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.top-content .text-content {
+	width: 100%;
+}
+
+/************* bottom content  *******/
+.bottom-content {
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.bottom-content .text-content {
+	width: 100%;
+}
+
+
+} /**** end of max media 500px ***/
+
+
+
+
+
 
 
